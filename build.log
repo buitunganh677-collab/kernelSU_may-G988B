@@ -1,0 +1,92 @@
+arch/arm64/Makefile:27: ld does not support --fix-cortex-a53-843419; kernel may be susceptible to erratum
+scripts/kconfig/conf -s --syncconfig Kconfig
+arch/arm64/Kconfig:1348:warning: multi-line strings not supported
+drivers/gpu/arm/bv_r38p1/Kconfig:389:warning: ignoring type redefinition of 'MALI_ARBITRATION' from 'bool' to 'tristate'
+drivers/soc/samsung/linkforward/Kconfig:4:warning: ignoring unsupported character ''
+drivers/soc/samsung/linkforward/Kconfig:5:warning: ignoring unsupported character ''
+drivers/soc/samsung/linkforward/Kconfig:6:warning: ignoring unsupported character ''
+drivers/soc/samsung/linkforward/Kconfig:7:warning: ignoring unsupported character ''
+drivers/soc/samsung/linkforward/Kconfig:8:warning: ignoring unsupported character ''
+arch/arm64/Makefile:27: ld does not support --fix-cortex-a53-843419; kernel may be susceptible to erratum
+security/samsung/defex_lsm/Makefile:14: [DEFEX] INTEGRITY_ENABLE
+kperfmon_DUMMY="olog.pb.h file is missing... retrying"
+cp: cannot stat './../../frameworks/base/proto/src/olog.proto': No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat './../../vendor/samsung/system/libperflog/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+chmod: cannot access './drivers/kperfmon/aprotoc': No such file or directory
+kperfmon_DUMMY=""
+make[2]: ./drivers/kperfmon/aprotoc: No such file or directory
+kperfmon_DUMMY=""
+cp: cannot stat './drivers/kperfmon/olog.pb.h': No such file or directory
+kperfmon_DUMMY=""
+kperfmon_DUMMY="olog.pb.h file is missing... again"
+kperfmon_DUMMY="perflog.h file is missing."
+cp: cannot stat './../../system/core/liblog/include/log/perflog.h': No such file or directory
+kperfmon_DUMMY=""
+-- KernelSU: Git repo detected at /home/tunganh/SM-G988B_13_Opensource/kernelSU/KernelSU
+-- KernelSU version: 32525
+-- KSU_NEW_DCACHE_FLUSH: 0
+-- KernelSU Manager signature size: 0x033b
+-- KernelSU Manager signature hash: c371061b19d8c7d7d6133c6a9bafe198fa944e50c1b31c9d8daa8d7f1fc2d2d6
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-nm: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objcopy: not found
+make[2]: *** [arch/arm64/kernel/vdso/Makefile:41: arch/arm64/kernel/vdso/vdso.so] Error 127
+make[1]: *** [scripts/Makefile.build:638: arch/arm64/kernel/vdso] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-ar: not found
+make[1]: *** [scripts/Makefile.build:497: arch/arm64/net/built-in.a] Error 127
+make: *** [Makefile:1148: arch/arm64/net] Error 2
+make: *** Waiting for unfinished jobs....
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-ar: not found
+make[1]: *** [scripts/Makefile.build:497: usr/built-in.a] Error 127
+make: *** [Makefile:1148: usr] Error 2
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+arch/arm64/mm/dma-mapping.c:509:6: error: variable 'ch_num' set but not used [-Werror,-Wunused-but-set-variable]
+  509 |         int ch_num = 0;
+      |             ^
+arch/arm64/mm/dma-mapping.c:557:6: error: variable 'ch_num' set but not used [-Werror,-Wunused-but-set-variable]
+  557 |         int ch_num = 0;
+      |             ^
+arch/arm64/mm/dma-mapping.c:592:6: error: variable 'ch_num' set but not used [-Werror,-Wunused-but-set-variable]
+  592 |         int ch_num = 0;
+      |             ^
+arch/arm64/mm/dma-mapping.c:636:6: error: variable 'ch_num' set but not used [-Werror,-Wunused-but-set-variable]
+  636 |         int ch_num = 0;
+      |             ^
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-ar: not found
+make[2]: *** [scripts/Makefile.build:497: arch/arm64/kernel/probes/built-in.a] Error 127
+make[1]: *** [scripts/Makefile.build:638: arch/arm64/kernel/probes] Error 2
+make: *** [Makefile:1148: arch/arm64/kernel] Error 2
+4 errors generated.
+make[1]: *** [scripts/Makefile.build:334: arch/arm64/mm/dma-mapping.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-ar: not found
+make[1]: *** [scripts/Makefile.build:497: init/built-in.a] Error 127
+make: *** [Makefile:1148: init] Error 2
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+/bin/sh: 1: ./toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin/aarch64-linux-android-objdump: not found
+make: *** [Makefile:1148: arch/arm64/mm] Error 2

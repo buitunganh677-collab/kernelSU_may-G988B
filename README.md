@@ -1,1 +1,1 @@
-# kernelSU_may-G988B
+# G988B-KernelSU
