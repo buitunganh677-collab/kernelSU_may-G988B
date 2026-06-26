@@ -1,27 +1,42 @@
-name: Makefile CI
+name: Build Kernel
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
+    - name: Install packages
+      run: |
+        sudo apt update
+        sudo apt install -y \
+          gcc-aarch64-linux-gnu \
+          binutils-aarch64-linux-gnu \
+          bc bison flex \
+          libssl-dev libelf-dev \
+          clang lld
 
-    - name: Install dependencies
-      run: make
+    - name: Configure
+      run: |
+        export ARCH=arm64
+        export SUBARCH=arm64
+        make exynos9830-z3sxxx_defconfig
 
-    - name: Run check
-      run: make check
+    - name: Build
+      run: |
+        export ARCH=arm64
+        export SUBARCH=arm64
+        make -j$(nproc)
 
-    - name: Run distcheck
-      run: make distcheck
+    - name: Upload
+      uses: actions/upload-artifact@v4
+      with:
+        name: kernel
+        path: |
+          arch/arm64/boot/Image*
+          arch/arm64/boot/dts/**/*.dtb
